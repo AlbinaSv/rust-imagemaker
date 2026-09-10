@@ -1,0 +1,34 @@
+# ==============================================================================
+# rust-imagemaker - Configuration Template
+# Rename this file to "config.toml" and place it next to your binary.
+# ==============================================================================
+
+# Directory where original high-resolution source images are stored
+source_dir = "../httpdocs/images"
+
+# Directory where generated thumbnails (cache) will be saved
+cache_dir = "../httpdocs/images/icons"
+
+# Strict whitelist of allowed image dimensions to prevent disk spam / DDoS attacks
+allowed_sizes = ["600x400", "320x240", "120x90"]
+
+# Allowed source file extensions for security verification
+allowed_extensions = ["jpg", "jpeg", "png", "gif"]
+
+# Compression quality for the output WebP images (1 to 100)
+default_quality = 85
+
+# Fallback image filename if the requested original file is missing
+fallback_image = "no-image.png"
+
+# How to handle non-proportional source images. Available options:
+# - "contain" : Fit image inside dimensions, fill empty gaps with background_color
+# - "cover"   : Fill dimensions entirely, crop out excess parts centered
+# - "stretch" : Forcefully resize image to fit dimensions, ignoring aspect ratio
+resize_mode = "contain"
+
+# Background color for "contain" mode (HEX format without #)
+background_color = "ffffff"
+
+# Path to watermark image file. Comment out or remove if watermarking is not needed
+# watermark = "../httpdocs/images/watermark.png"

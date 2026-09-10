@@ -1,0 +1,13 @@
+# ==============================================================================
+# rust-imagemaker - Apache Configuration Template
+# Paste this code into your root .htaccess file inside your public web folder.
+# ==============================================================================
+
+Options +ExecCGI
+RewriteEngine On
+
+# If the physically cached WebP image does not exist on disk
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Reroute the request directly to our high-performance Rust CGI binary
+RewriteRule ^images/icons/(.+)$ /cgi-bin/rust-imagemaker/images/icons/$1 [L,PT]
