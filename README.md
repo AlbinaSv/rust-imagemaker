@@ -1,8 +1,8 @@
 # rust-imagemaker
 
-![Rust](https://shields.io/badge/rust-2021-orange.svg)
+![Rust](https://shields.io/badge/rust-2024-orange.svg)
 ![License](https://shields.io/badge/license-MIT-blue.svg)
-![Platform](https://shields.io/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)
+![Platform](https://shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)
 
 A universal, high-performance CGI image resizer written in Rust, built for web sites and apps. It acts as an autonomous on-the-fly image processing and caching microservice that can be plugged into *any* backend or CMS without modifying your website's codebase.
 

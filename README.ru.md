@@ -1,8 +1,8 @@
 # rust-imagemaker
 
-![Rust](https://shields.io/badge/rust-2021-orange.svg)
+![Rust](https://shields.io/badge/rust-2024-orange.svg)
 ![License](https://shields.io/badge/license-MIT-blue.svg)
-![Platform](https://shields.io/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)
+![Platform](https://shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey.svg)
 
 Универсальный высокопроизводительный CGI-ресайзер изображений, написанный на Rust и разработанный для веб-сайтов и приложений. Он работает как автономный микросервис динамической обработки и кэширования графики «на лету», который можно подключить к *любому* движку или CMS без изменения исходного кода самого сайта.
 
