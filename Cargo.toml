@@ -1,0 +1,20 @@
+[package]
+name = "rust-imagemaker"
+version = "1.0.0"
+edition = "2024"
+authors = ["AlbinaSv"]
+description = "Universal high-performance CGI image resizer for web sites and apps written in Rust"
+
+
+# Настраиваем сборку бинарника (наш CGI-скрипт)
+[[bin]]
+name = "rust-imagemaker"
+path = "src/main.rs"
+
+[dependencies]
+# Библиотека для чтения и парсинга TOML конфигурации
+toml = "0.8"
+# Стандарт де-факто для сериализации/десериализации данных в Rust
+serde = { version = "1.0", features = ["derive"] }
+# Движок для работы с пикселями, ресайза и графики
+image = { version = "0.25", features = ["webp"] }

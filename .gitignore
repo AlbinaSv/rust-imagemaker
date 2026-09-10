@@ -1,0 +1,9 @@
+/target
+/public
+Cargo.lock
+*.rs.bk
+.DS_Store
+config.toml
+*.rs.bk
+.DS_Store
+EOT
